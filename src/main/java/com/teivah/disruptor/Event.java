@@ -7,12 +7,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Event<T> {
 
-  private T payload;
+  String payload;
 
-public char[] getPayload() {
-	return null;
-}
+  public String getPayload() {
+    return this.payload;
+  }
 
-public void setPayload(String string) {
-}
+  public void setPayload(String string) {
+    this.payload = string;
+  }
 }
